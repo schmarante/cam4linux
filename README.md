@@ -1,6 +1,16 @@
 # CAM4LINUX
-CAM4LINUX is a python library and software suite for nzxt devices.
-It is based on reverse engineering the CAM software provided by nzxt.
+CAM4LINUX is a python library and software suite for controlling fans and lighting of NZXT
+devices on Linux.
+
+**This repository is a fork of [xvzf/cam4linux](https://github.com/xvzf/cam4linux) by Matthias
+Riegler.** It builds on that project and has been developed further, among other things with
+support for the NZXT Smart Device V2 / RGB & Fan Controller and a desktop app.
+
+> **Disclaimer:** This is an independent community project. It is **not** an official NZXT
+> product and is not affiliated with, endorsed, sponsored or supported by NZXT Inc. in any way.
+> Please do not contact NZXT support about this software. NZXT, CAM and the product names
+> mentioned here are trademarks of NZXT Inc. and are used only to describe compatibility.
+> Use at your own risk: wrong fan settings can cause your hardware to overheat.
 
 
 # SUPPORTED DEVICES
@@ -10,6 +20,17 @@ It is based on reverse engineering the CAM software provided by nzxt.
 
 # CAM4LINUX APP
 Desktop app (Qt/PySide6) with fan curves and lighting control:
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/fans.png" alt="Fan control: per-fan curve editor with temperature sources and presets"></td>
+    <td width="50%"><img src="docs/screenshots/lighting.png" alt="Lighting: LED effect, colors and speed for both channels"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Fan control</b></td>
+    <td align="center"><b>Lighting</b></td>
+  </tr>
+</table>
 
 - fan curves per fan (drag points, presets), or fixed speed
 - temperature sources: CPU, GPU (NVIDIA via `nvidia-smi`, AMD via hwmon), NVMe, RAM, …
